@@ -1,0 +1,6 @@
+name = GSB Panels Pages
+core = 7.x
+package = GSB
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = page_manager
