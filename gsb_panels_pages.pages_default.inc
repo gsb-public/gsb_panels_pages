@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * gsb_panels_pages_display.pages_default.inc
+ * gsb_panels_pages.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_handlers().
  */
-function gsb_panels_pages_display_default_page_manager_handlers() {
+function gsb_panels_pages_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();
@@ -157,7 +157,7 @@ function gsb_panels_pages_display_default_page_manager_handlers() {
 /**
  * Implements hook_default_page_manager_pages().
  */
-function gsb_panels_pages_display_default_page_manager_pages() {
+function gsb_panels_pages_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;

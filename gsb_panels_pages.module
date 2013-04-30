@@ -8,7 +8,7 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function gsb_panels_pages_display_ctools_plugin_api() {
+function gsb_panels_pages_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
@@ -18,7 +18,7 @@ function gsb_panels_pages_display_ctools_plugin_api() {
 /**
  * Implements hook_default_page_manager_handlers_alter().
  */
-function gsb_panels_pages_display_default_page_manager_handlers_alter(&$data) {
+function gsb_panels_pages_default_page_manager_handlers_alter(&$data) {
   if (isset($data['node_view_panelizer'])) {
     $data['node_view_panelizer']->conf['access']['logic'] = 'and'; /* WAS: '' */
     $data['node_view_panelizer']->conf['access']['plugins'] = array(
