@@ -283,7 +283,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -317,7 +316,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -430,7 +428,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -464,7 +461,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -577,7 +573,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -611,7 +606,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -724,7 +718,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -758,7 +751,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -871,7 +863,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -905,7 +896,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1018,7 +1008,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1052,7 +1041,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1165,7 +1153,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1199,7 +1186,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1312,7 +1298,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1346,7 +1331,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1459,7 +1443,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1493,7 +1476,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1606,7 +1588,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1640,7 +1621,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1753,7 +1733,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1787,7 +1766,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1900,7 +1878,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -1934,7 +1911,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2047,7 +2023,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2081,7 +2056,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2194,7 +2168,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2228,7 +2201,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2341,7 +2313,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2375,7 +2346,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2488,7 +2458,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2522,7 +2491,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2635,7 +2603,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2669,7 +2636,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2782,7 +2748,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2816,7 +2781,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2929,7 +2893,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -2963,7 +2926,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3076,7 +3038,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3110,7 +3071,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3223,7 +3183,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3257,7 +3216,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3370,7 +3328,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3404,7 +3361,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3500,7 +3456,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3534,7 +3489,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3630,7 +3584,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3664,7 +3617,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3759,7 +3711,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3793,7 +3744,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3888,7 +3838,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -3922,7 +3871,6 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
