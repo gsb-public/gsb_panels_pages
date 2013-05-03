@@ -232,7 +232,18 @@ function gsb_panels_pages_default_page_manager_pages() {
   $page->admin_description = 'Display different variants for business insights';
   $page->path = 'business-insights/!name';
   $page->access = array();
-  $page->menu = array();
+  $page->menu = array(
+    'type' => 'tab',
+    'title' => 'Business Insights',
+    'name' => 'navigation',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
   $page->arguments = array(
     'name' => array(
       'id' => 1,
@@ -375,7 +386,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-1';
     $pane = new stdClass();
     $pane->pid = 'new-2';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -405,7 +416,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['sidebar'][0] = 'new-2';
+    $display->panels['quicklinks'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -520,7 +531,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -550,7 +561,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-4'] = $pane;
-    $display->panels['sidebar'][0] = 'new-4';
+    $display->panels['quicklinks'][0] = 'new-4';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -665,7 +676,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-5';
     $pane = new stdClass();
     $pane->pid = 'new-6';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -695,7 +706,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-6'] = $pane;
-    $display->panels['sidebar'][0] = 'new-6';
+    $display->panels['quicklinks'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -810,7 +821,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-7';
     $pane = new stdClass();
     $pane->pid = 'new-8';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -840,7 +851,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-8'] = $pane;
-    $display->panels['sidebar'][0] = 'new-8';
+    $display->panels['quicklinks'][0] = 'new-8';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -955,7 +966,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -985,7 +996,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['sidebar'][0] = 'new-10';
+    $display->panels['quicklinks'][0] = 'new-10';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1100,7 +1111,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-11';
     $pane = new stdClass();
     $pane->pid = 'new-12';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1130,7 +1141,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-12'] = $pane;
-    $display->panels['sidebar'][0] = 'new-12';
+    $display->panels['quicklinks'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1245,7 +1256,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-13';
     $pane = new stdClass();
     $pane->pid = 'new-14';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1275,7 +1286,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-14'] = $pane;
-    $display->panels['sidebar'][0] = 'new-14';
+    $display->panels['quicklinks'][0] = 'new-14';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1390,7 +1401,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-15';
     $pane = new stdClass();
     $pane->pid = 'new-16';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1420,7 +1431,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-16'] = $pane;
-    $display->panels['sidebar'][0] = 'new-16';
+    $display->panels['quicklinks'][0] = 'new-16';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1535,7 +1546,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-17';
     $pane = new stdClass();
     $pane->pid = 'new-18';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1565,7 +1576,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-18'] = $pane;
-    $display->panels['sidebar'][0] = 'new-18';
+    $display->panels['quicklinks'][0] = 'new-18';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1680,7 +1691,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-19';
     $pane = new stdClass();
     $pane->pid = 'new-20';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1710,7 +1721,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-20'] = $pane;
-    $display->panels['sidebar'][0] = 'new-20';
+    $display->panels['quicklinks'][0] = 'new-20';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1825,7 +1836,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-21';
     $pane = new stdClass();
     $pane->pid = 'new-22';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -1855,7 +1866,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-22'] = $pane;
-    $display->panels['sidebar'][0] = 'new-22';
+    $display->panels['quicklinks'][0] = 'new-22';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1970,7 +1981,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-23';
     $pane = new stdClass();
     $pane->pid = 'new-24';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2000,7 +2011,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-24'] = $pane;
-    $display->panels['sidebar'][0] = 'new-24';
+    $display->panels['quicklinks'][0] = 'new-24';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2115,7 +2126,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-25';
     $pane = new stdClass();
     $pane->pid = 'new-26';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2145,7 +2156,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-26'] = $pane;
-    $display->panels['sidebar'][0] = 'new-26';
+    $display->panels['quicklinks'][0] = 'new-26';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2260,7 +2271,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-27';
     $pane = new stdClass();
     $pane->pid = 'new-28';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2290,7 +2301,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-28'] = $pane;
-    $display->panels['sidebar'][0] = 'new-28';
+    $display->panels['quicklinks'][0] = 'new-28';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2405,7 +2416,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-29';
     $pane = new stdClass();
     $pane->pid = 'new-30';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2435,7 +2446,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-30'] = $pane;
-    $display->panels['sidebar'][0] = 'new-30';
+    $display->panels['quicklinks'][0] = 'new-30';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2550,7 +2561,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-31';
     $pane = new stdClass();
     $pane->pid = 'new-32';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2580,7 +2591,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-32'] = $pane;
-    $display->panels['sidebar'][0] = 'new-32';
+    $display->panels['quicklinks'][0] = 'new-32';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2695,7 +2706,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-33';
     $pane = new stdClass();
     $pane->pid = 'new-34';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2725,7 +2736,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-34'] = $pane;
-    $display->panels['sidebar'][0] = 'new-34';
+    $display->panels['quicklinks'][0] = 'new-34';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2809,7 +2820,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->pid = 'new-35';
     $pane->panel = 'mainbottom';
     $pane->type = 'views_panes';
-    $pane->subtype = 'business_insights_by_tag-business_insights_by_tag';
+    $pane->subtype = 'business_insights_by_tag-business_insights_by_region';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -2840,7 +2851,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-35';
     $pane = new stdClass();
     $pane->pid = 'new-36';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -2870,7 +2881,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-36'] = $pane;
-    $display->panels['sidebar'][0] = 'new-36';
+    $display->panels['quicklinks'][0] = 'new-36';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2954,7 +2965,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->pid = 'new-37';
     $pane->panel = 'mainbottom';
     $pane->type = 'views_panes';
-    $pane->subtype = 'business_insights_by_tag-business_insights_by_tag';
+    $pane->subtype = 'business_insights_by_tag-business_insights_by_region';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -2985,7 +2996,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-37';
     $pane = new stdClass();
     $pane->pid = 'new-38';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3015,7 +3026,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-38'] = $pane;
-    $display->panels['sidebar'][0] = 'new-38';
+    $display->panels['quicklinks'][0] = 'new-38';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3099,7 +3110,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->pid = 'new-39';
     $pane->panel = 'mainbottom';
     $pane->type = 'views_panes';
-    $pane->subtype = 'business_insights_by_tag-business_insights_by_tag';
+    $pane->subtype = 'business_insights_by_tag-business_insights_by_region';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -3130,7 +3141,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-39';
     $pane = new stdClass();
     $pane->pid = 'new-40';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3160,7 +3171,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-40'] = $pane;
-    $display->panels['sidebar'][0] = 'new-40';
+    $display->panels['quicklinks'][0] = 'new-40';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3244,7 +3255,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->pid = 'new-41';
     $pane->panel = 'mainbottom';
     $pane->type = 'views_panes';
-    $pane->subtype = 'business_insights_by_tag-business_insights_by_tag';
+    $pane->subtype = 'business_insights_by_tag-business_insights_by_region';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -3275,7 +3286,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-41';
     $pane = new stdClass();
     $pane->pid = 'new-42';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3305,7 +3316,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-42'] = $pane;
-    $display->panels['sidebar'][0] = 'new-42';
+    $display->panels['quicklinks'][0] = 'new-42';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3389,7 +3400,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->pid = 'new-43';
     $pane->panel = 'mainbottom';
     $pane->type = 'views_panes';
-    $pane->subtype = 'business_insights_by_tag-business_insights_by_tag';
+    $pane->subtype = 'business_insights_by_tag-business_insights_by_region';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -3420,7 +3431,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-43';
     $pane = new stdClass();
     $pane->pid = 'new-44';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3450,7 +3461,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-44'] = $pane;
-    $display->panels['sidebar'][0] = 'new-44';
+    $display->panels['quicklinks'][0] = 'new-44';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3548,7 +3559,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-45';
     $pane = new stdClass();
     $pane->pid = 'new-46';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3578,7 +3589,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-46'] = $pane;
-    $display->panels['sidebar'][0] = 'new-46';
+    $display->panels['quicklinks'][0] = 'new-46';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3676,7 +3687,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-47';
     $pane = new stdClass();
     $pane->pid = 'new-48';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3706,7 +3717,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-48'] = $pane;
-    $display->panels['sidebar'][0] = 'new-48';
+    $display->panels['quicklinks'][0] = 'new-48';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3803,7 +3814,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-49';
     $pane = new stdClass();
     $pane->pid = 'new-50';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3833,7 +3844,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-50'] = $pane;
-    $display->panels['sidebar'][0] = 'new-50';
+    $display->panels['quicklinks'][0] = 'new-50';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3930,7 +3941,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $display->panels['mainbottom'][0] = 'new-51';
     $pane = new stdClass();
     $pane->pid = 'new-52';
-    $pane->panel = 'sidebar';
+    $pane->panel = 'quicklinks';
     $pane->type = 'views_panes';
     $pane->subtype = 'business_insights_sidebar-business_insights_menu';
     $pane->shown = TRUE;
@@ -3960,7 +3971,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-52'] = $pane;
-    $display->panels['sidebar'][0] = 'new-52';
+    $display->panels['quicklinks'][0] = 'new-52';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -3968,5 +3979,4 @@ function gsb_panels_pages_default_page_manager_pages() {
   $pages['business_insights'] = $page;
 
   return $pages;
-
 }
