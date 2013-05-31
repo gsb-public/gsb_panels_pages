@@ -278,7 +278,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'gsb-landing-standard-page-one';
+  $display->layout = 'gsb-landing-events';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -301,12 +301,13 @@ function gsb_panels_pages_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-1';
-    $pane->panel = 'fullheader';
+    $pane->panel = 'main';
     $pane->type = 'views_panes';
-    $pane->subtype = 'gsb_event-panel_pane_2';
+    $pane->subtype = 'gsb_event-event_listing_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -329,7 +330,29 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-1'] = $pane;
-    $display->panels['fullheader'][0] = 'new-1';
+    $display->panels['main'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'views-2ef5bc6cc078a7774c2524f5b76f1c0d';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-2'] = $pane;
+    $display->panels['sidebar'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -385,7 +408,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'gsb-landing-standard-page-one';
+  $display->layout = 'gsb-landing-events';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -400,6 +423,7 @@ function gsb_panels_pages_default_page_manager_pages() {
       'mainbottom' => NULL,
       'quicklinks' => NULL,
       'sidebar' => NULL,
+      'main' => NULL,
     ),
   );
   $display->cache = array();
@@ -407,13 +431,14 @@ function gsb_panels_pages_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-2';
-    $pane->panel = 'fullheader';
+    $pane->pid = 'new-1';
+    $pane->panel = 'main';
     $pane->type = 'views_panes';
-    $pane->subtype = 'gsb_event-panel_pane_1';
+    $pane->subtype = 'gsb_event-event_calendar_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'view_mode' => 'teaser',
       'widget_title' => NULL,
       'items_per_page' => NULL,
       'exposed' => array(
@@ -437,8 +462,30 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
+    $display->content['new-1'] = $pane;
+    $display->panels['main'][0] = 'new-1';
+    $pane = new stdClass();
+    $pane->pid = 'new-2';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'views-61b115ef828952bd2c46d43cc10e5c7a';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'inherit_path' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
     $display->content['new-2'] = $pane;
-    $display->panels['fullheader'][0] = 'new-2';
+    $display->panels['sidebar'][0] = 'new-2';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
