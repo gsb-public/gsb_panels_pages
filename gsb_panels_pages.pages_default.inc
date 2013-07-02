@@ -341,7 +341,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     $pane->configuration = array(
       'inherit_path' => 1,
       'override_title' => 1,
-      'override_title_text' => 'Filter by',
+      'override_title_text' => 'Calendar search',
     );
     $pane->cache = array();
     $pane->style = array(
