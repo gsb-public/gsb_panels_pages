@@ -5,3 +5,10 @@ version = 7.x-1.0
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels_mini
+
+
+; Information added by drush on 2013-07-16
+version = "master-dev"
+project = "gsb_panels_pages"
+datestamp = "1373998427"
+
