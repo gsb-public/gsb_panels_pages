@@ -408,7 +408,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     'weight' => '0',
     'parent' => array(
       'type' => 'none',
-      'title' => 'Events',
+      'title' => 'Events Calendar',
       'name' => 'main-menu',
       'weight' => '0',
     ),
