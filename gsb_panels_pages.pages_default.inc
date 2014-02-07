@@ -398,7 +398,18 @@ function gsb_panels_pages_default_page_manager_pages() {
   $page->admin_description = '';
   $page->path = 'library/conduct-research/business-websites/!category';
   $page->access = array();
-  $page->menu = array();
+  $page->menu = array(
+    'type' => 'default tab',
+    'title' => 'Business Websites',
+    'name' => 'navigation',
+    'weight' => '0',
+    'parent' => array(
+      'type' => 'none',
+      'title' => '',
+      'name' => 'navigation',
+      'weight' => '0',
+    ),
+  );
   $page->arguments = array(
     'category' => array(
       'id' => 1,
@@ -478,7 +489,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = '%category:name Business Websites';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -552,7 +563,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'gsb-landing-events';
+  $display->layout = 'gsb-standard-page-two';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -562,7 +573,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Business Websites';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
