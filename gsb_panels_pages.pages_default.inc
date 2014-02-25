@@ -437,7 +437,7 @@ function gsb_panels_pages_default_page_manager_pages() {
           171 => 0,
         ),
         'breadcrumb' => 1,
-        'transform' => 0,
+        'transform' => 1,
       ),
     ),
   );
