@@ -339,7 +339,7 @@ function gsb_panels_pages_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '%category:name Business Websites';
+  $display->title = '%category:name Websites';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
