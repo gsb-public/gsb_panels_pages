@@ -474,7 +474,7 @@ function gsb_panels_pages_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'MSx Listing';
   $page->admin_description = '';
-  $page->path = 'programs/msx/academic-experience/fellows';
+  $page->path = 'programs/msx/life/fellows';
   $page->access = array(
     'type' => 'none',
     'settings' => NULL,
