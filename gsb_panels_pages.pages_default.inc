@@ -238,7 +238,7 @@ function gsb_panels_pages_default_page_manager_pages() {
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
 
-  // Business Websites Page
+  // Business Websites Page - Removed
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
